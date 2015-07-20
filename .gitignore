@@ -1,4 +1,5 @@
 ## Project specific ignores
+[Ss]elected/
 [Ii]mages/
 3rdParty/
 #.pyc

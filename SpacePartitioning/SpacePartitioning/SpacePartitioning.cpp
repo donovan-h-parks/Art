@@ -13,10 +13,7 @@ SpacePartitioning::SpacePartitioning(uint width, uint height, int maxIterations,
 	: m_image(width, height, 1, 3, 255), m_maxIterations(maxIterations), m_drawPrimativePercentage(drawPrimativePercentage), 
 		m_borderSize(borderSize), m_offset(offset), m_bDisplay(bDisplay)
 {
-	//Artist::extractPalette("../Data/pollockShimmering.jpg", m_palette);
-	//Artist::extractPalette("../Data/guzekPalette.png", m_palette);
-	Artist::extractPalette("../Data/RiopellePalette.png", m_palette);
-	//Artist::extractPalette("../Data/utopia_aboriginal_art.jpg", m_palette);
+	Artist::extractPalette("../../data/palettes/modern_cubism.palette.png", m_palette);
 
 	if(m_bDisplay)
 		m_imageDisplay = CImgDisplay(m_image,"SpacePartition", 0);
@@ -75,7 +72,7 @@ void SpacePartitioning::partition(int x1, int y1, int x2, int y2, int iteration)
 			fillColour = m_palette.at(rand() % m_palette.size());
 
 		Colour borderColour(fillColour);
-		borderColour.darken(0.2f);
+		//borderColour.darken(0.2f);
 
 		int randShape = randInt(0,2);
 		if(randShape == 0)

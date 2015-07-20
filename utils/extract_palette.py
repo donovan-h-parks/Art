@@ -83,4 +83,4 @@ class ExtractPalette:
 
 if __name__ == "__main__":
     extractPalette = ExtractPalette()
-    extractPalette.run("../data/src_images/HolgerLippmann_IterateIt.jpg","../data/palettes/lippmann.palette.png")
+    extractPalette.run("../data/src_images/peter_lik_one.jpg","../data/palettes/peter_lik.palette.png")

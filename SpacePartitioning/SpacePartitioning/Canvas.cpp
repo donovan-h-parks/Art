@@ -12,7 +12,7 @@ int main(int argc, char* argv[])
 	// calculate pixel size
 	int widthCM = 60; //120;
 	int heightCM = 60; //40;
-	int DPI = 600;
+	int DPI = 96;
 	float inchPerCM = 0.393700787f;
 	int widthPixel = int(widthCM * inchPerCM * DPI + 0.5);
 	int heightPixel = int(heightCM * inchPerCM * DPI + 0.5);
@@ -28,7 +28,7 @@ int main(int argc, char* argv[])
 		SpacePartitioning sp(widthPixel, heightPixel, maxIterations, drawPrimativePercentage, 2, 2, bDisplay);
 		sp.draw();
 
-		std::string filename = "SpacePartitioningFinal_";
+		std::string filename = "../images/SpacePartitioningFinal_";
 
 		char version[30];
 		itoa(i, version, 10);
