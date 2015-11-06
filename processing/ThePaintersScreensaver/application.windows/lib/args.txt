@@ -1,0 +1,3 @@
+ -Xms64m -Xmx1600m
+ThePaintersScreensaver
+ThePaintersScreensaver.jar,core.jar,controlP5.jar

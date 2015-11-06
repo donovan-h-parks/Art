@@ -1,0 +1,3 @@
+ -Xms64m -Xmx1024m
+ThePainters
+ThePainters.jar,core.jar,controlP5.jar
